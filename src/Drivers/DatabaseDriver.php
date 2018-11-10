@@ -1,12 +1,12 @@
 <?php
 
-namespace Freshbitsweb\LaravelCartManager\Drivers;
+namespace Berkayk\LaravelCart\Drivers;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cookie;
-use Freshbitsweb\LaravelCartManager\Models\Cart;
-use Freshbitsweb\LaravelCartManager\Models\CartItem;
-use Freshbitsweb\LaravelCartManager\Contracts\CartDriver;
+use Berkayk\LaravelCart\Models\Cart;
+use Berkayk\LaravelCart\Models\CartItem;
+use Berkayk\LaravelCart\Contracts\CartDriver;
 
 class DatabaseDriver implements CartDriver
 {

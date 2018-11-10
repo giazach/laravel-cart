@@ -1,6 +1,6 @@
 {
-    "name": "freshbitsweb/laravel-cart-manager",
-    "description": "Managing the cart of your Laravel application is a breeze",
+    "name": "berkayk/laravel-cart",
+    "description": "Laravel shopping cart management in an easy way.",
     "require": {
         "php": ">=7.0.0",
         "illuminate/support": "5.5.*|5.6.*|5.7.*"
@@ -15,11 +15,15 @@
         {
             "name": "Gaurav Makhecha",
             "email": "info@freshbits.in"
+        },
+        {
+            "name": "Berkay Kaya",
+            "email": "berkayk@gmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Freshbitsweb\\LaravelCartManager\\": "src/"
+            "Berkayk\\LaravelCart\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -27,7 +31,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Freshbitsweb\\LaravelCartManager\\Test\\": "tests"
+            "Berkayk\\LaravelCart\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -36,7 +40,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Freshbitsweb\\LaravelCartManager\\CartManagerServiceProvider"
+                "Berkayk\\LaravelCart\\CartManagerServiceProvider"
             ]
         }
     },

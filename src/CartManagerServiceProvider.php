@@ -1,13 +1,13 @@
 <?php
 
-namespace Freshbitsweb\LaravelCartManager;
+namespace Berkayk\LaravelCart;
 
 use Illuminate\Support\ServiceProvider;
-use Freshbitsweb\LaravelCartManager\Core\Cart;
-use Freshbitsweb\LaravelCartManager\Contracts\CartDriver;
-use Freshbitsweb\LaravelCartManager\Observers\CartObserver;
-use Freshbitsweb\LaravelCartManager\Models\Cart as CartModel;
-use Freshbitsweb\LaravelCartManager\Console\Commands\ClearCartDataCommand;
+use Berkayk\LaravelCart\Core\Cart;
+use Berkayk\LaravelCart\Contracts\CartDriver;
+use Berkayk\LaravelCart\Observers\CartObserver;
+use Berkayk\LaravelCart\Models\Cart as CartModel;
+use Berkayk\LaravelCart\Console\Commands\ClearCartDataCommand;
 
 class CartManagerServiceProvider extends ServiceProvider
 {
@@ -20,11 +20,11 @@ class CartManagerServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/cart_manager.php' => config_path('cart_manager.php'),
+                __DIR__ . '/../config/cart_manager.php' => config_path('cart_manager.php'),
             ], 'laravel-cart-manager-config');
 
             $this->publishes([
-                __DIR__.'/../database/migrations/' => database_path('migrations'),
+                __DIR__ . '/../database/migrations/' => database_path('migrations'),
             ], 'laravel-cart-manager-migrations');
 
             $this->commands([ClearCartDataCommand::class]);
@@ -42,7 +42,7 @@ class CartManagerServiceProvider extends ServiceProvider
     {
         // Users can specify only the options they actually want to override
         $this->mergeConfigFrom(
-            __DIR__.'/../config/cart_manager.php', 'cart_manager'
+            __DIR__ . '/../config/cart_manager.php', 'cart_manager'
         );
 
         // Bind the driver with contract

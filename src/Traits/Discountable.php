@@ -1,9 +1,9 @@
 <?php
 
-namespace Freshbitsweb\LaravelCartManager\Traits;
+namespace Berkayk\LaravelCart\Traits;
 
-use Freshbitsweb\LaravelCartManager\Events\DiscountApplied;
-use Freshbitsweb\LaravelCartManager\Exceptions\IncorrectDiscount;
+use Berkayk\LaravelCart\Events\DiscountApplied;
+use Berkayk\LaravelCart\Exceptions\IncorrectDiscount;
 
 trait Discountable
 {

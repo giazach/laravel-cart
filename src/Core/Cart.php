@@ -1,15 +1,15 @@
 <?php
 
-namespace Freshbitsweb\LaravelCartManager\Core;
+namespace Berkayk\LaravelCart\Core;
 
 use BadMethodCallException;
 use Illuminate\Contracts\Support\Arrayable;
-use Freshbitsweb\LaravelCartManager\Traits\CartTotals;
-use Freshbitsweb\LaravelCartManager\Events\CartCleared;
-use Freshbitsweb\LaravelCartManager\Events\CartCreated;
-use Freshbitsweb\LaravelCartManager\Traits\Discountable;
-use Freshbitsweb\LaravelCartManager\Contracts\CartDriver;
-use Freshbitsweb\LaravelCartManager\Traits\CartItemsManager;
+use Berkayk\LaravelCart\Traits\CartTotals;
+use Berkayk\LaravelCart\Events\CartCleared;
+use Berkayk\LaravelCart\Events\CartCreated;
+use Berkayk\LaravelCart\Traits\Discountable;
+use Berkayk\LaravelCart\Contracts\CartDriver;
+use Berkayk\LaravelCart\Traits\CartItemsManager;
 
 class Cart implements Arrayable
 {

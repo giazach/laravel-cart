@@ -1,12 +1,12 @@
 <?php
 
-namespace Freshbitsweb\LaravelCartManager\Console\Commands;
+namespace Berkayk\LaravelCart\Console\Commands;
 
 use Carbon\Carbon;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Schema;
-use Freshbitsweb\LaravelCartManager\Models\Cart;
-use Freshbitsweb\LaravelCartManager\Models\CartItem;
+use Berkayk\LaravelCart\Models\Cart;
+use Berkayk\LaravelCart\Models\CartItem;
 
 class ClearCartDataCommand extends Command
 {

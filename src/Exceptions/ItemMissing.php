@@ -1,6 +1,6 @@
 <?php
 
-namespace Freshbitsweb\LaravelCartManager\Exceptions;
+namespace Berkayk\LaravelCart\Exceptions;
 
 use OutOfBoundsException;
 
