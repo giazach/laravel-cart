@@ -1,11 +1,16 @@
-[![Latest Stable Version](https://poser.pugx.org/freshbitsweb/laravel-cart-manager/v/stable)](https://packagist.org/packages/freshbitsweb/laravel-cart-manager)
-[![Total Downloads](https://poser.pugx.org/freshbitsweb/laravel-cart-manager/downloads)](https://packagist.org/packages/freshbitsweb/laravel-cart-manager)
-[![License](https://poser.pugx.org/freshbitsweb/laravel-cart-manager/license)](https://packagist.org/packages/freshbitsweb/laravel-cart-manager)
+[![Latest Stable Version](https://poser.pugx.org/berkayk/laravel-cart/v/stable)](https://packagist.org/packages/berkayk/laravel-cart)
+[![Total Downloads](https://poser.pugx.org/berkayk/laravel-cart/downloads)](https://packagist.org/packages/freshbitsweb/laravel-cart-manager)
+[![License](https://poser.pugx.org/berkayk/laravel-cart/license)](https://packagist.org/packages/freshbitsweb/laravel-cart-manager)
+<!---
 [![StyleCI](https://styleci.io/repos/115199831/shield?branch=master)](https://styleci.io/repos/115199831)
 [![Build Status](https://travis-ci.com/freshbitsweb/laravel-cart-manager.svg?branch=master)](https://travis-ci.com/freshbitsweb/laravel-cart-manager)
+--->
 
 # Cart Manager for Laravel 5.5+
-Let's make the cart management with Laravel a breeze.
+This package is an updated version of FreshBitsWeb's [laravel-cart-manager](https://github.com/freshbitsweb/laravel-cart-manager)  package.
+
+## What's updated
+* Each update to a cart item's quantity now dispatches `CartItemQuantityChanged` event. 
 
 ## Just another shopping cart package?
 There are a few well maintained shopping cart packages available but I wanted to have a solution which feels like *the Laravel way* and is more coupled with the database and provides additional functionality like **shipping charges**, **discount**, **tax**, **total**,  **round off**, **guest carts**, etc. *out-of-box* while staying a very easy to use package.
@@ -86,6 +91,7 @@ composer test
 ## Authors
 
 * [**Gaurav Makhecha**](https://github.com/gauravmak) - *Initial work*
+* [Berkay Kaya](https://github.com/berkayk) - *Updates*
 
 See also the list of [contributors](https://github.com/freshbitsweb/laravel-cart-manager/graphs/contributors) who participated in this project.
 
@@ -95,4 +101,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Special Thanks to
 
+* [FreshBitsWeb](https://github.com/freshbitsweb/laravel-cart-manager)
 * [Laravel](https://laravel.com) Community

@@ -1,6 +1,6 @@
 <?php
 
-namespace Berkayk\LaravelCart\Traits;
+namespace Freshbitsweb\LaravelCartManager\Traits;
 
 trait CartTotals
 {

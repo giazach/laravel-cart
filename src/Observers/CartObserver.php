@@ -1,15 +1,15 @@
 <?php
 
-namespace Berkayk\LaravelCart\Observers;
+namespace Freshbitsweb\LaravelCartManager\Observers;
 
-use Berkayk\LaravelCart\Models\Cart;
+use Freshbitsweb\LaravelCartManager\Models\Cart;
 
 class CartObserver
 {
     /**
      * Listen to the Cart deleting event.
      *
-     * @param \Berkayk\LaravelCart\Models\Cart $cart
+     * @param \Freshbitsweb\LaravelCartManager\Models\Cart $cart
      * @return void
      */
     public function deleting(Cart $cart)

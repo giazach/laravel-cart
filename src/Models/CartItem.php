@@ -1,6 +1,6 @@
 <?php
 
-namespace Berkayk\LaravelCart\Models;
+namespace Freshbitsweb\LaravelCartManager\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

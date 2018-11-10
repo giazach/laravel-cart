@@ -1,13 +1,13 @@
 <?php
 
-namespace Berkayk\LaravelCart;
+namespace Freshbitsweb\LaravelCartManager;
 
 use Illuminate\Support\ServiceProvider;
-use Berkayk\LaravelCart\Core\Cart;
-use Berkayk\LaravelCart\Contracts\CartDriver;
-use Berkayk\LaravelCart\Observers\CartObserver;
-use Berkayk\LaravelCart\Models\Cart as CartModel;
-use Berkayk\LaravelCart\Console\Commands\ClearCartDataCommand;
+use Freshbitsweb\LaravelCartManager\Core\Cart;
+use Freshbitsweb\LaravelCartManager\Contracts\CartDriver;
+use Freshbitsweb\LaravelCartManager\Observers\CartObserver;
+use Freshbitsweb\LaravelCartManager\Models\Cart as CartModel;
+use Freshbitsweb\LaravelCartManager\Console\Commands\ClearCartDataCommand;
 
 class CartManagerServiceProvider extends ServiceProvider
 {

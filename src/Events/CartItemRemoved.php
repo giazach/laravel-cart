@@ -1,6 +1,6 @@
 <?php
 
-namespace Berkayk\LaravelCart\Events;
+namespace Freshbitsweb\LaravelCartManager\Events;
 
 class CartItemRemoved
 {

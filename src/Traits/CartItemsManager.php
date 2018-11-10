@@ -1,12 +1,12 @@
 <?php
 
-namespace Berkayk\LaravelCart\Traits;
+namespace Freshbitsweb\LaravelCartManager\Traits;
 
-use Berkayk\LaravelCart\Core\CartItem;
-use Berkayk\LaravelCart\Events\CartItemAdded;
-use Berkayk\LaravelCart\Events\CartItemQuantityChanged;
-use Berkayk\LaravelCart\Events\CartItemRemoved;
-use Berkayk\LaravelCart\Exceptions\ItemMissing;
+use Freshbitsweb\LaravelCartManager\Core\CartItem;
+use Freshbitsweb\LaravelCartManager\Events\CartItemAdded;
+use Freshbitsweb\LaravelCartManager\Events\CartItemQuantityChanged;
+use Freshbitsweb\LaravelCartManager\Events\CartItemRemoved;
+use Freshbitsweb\LaravelCartManager\Exceptions\ItemMissing;
 
 trait CartItemsManager
 {

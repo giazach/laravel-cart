@@ -1,6 +1,6 @@
 <?php
 
-namespace Berkayk\LaravelCart\Exceptions;
+namespace Freshbitsweb\LaravelCartManager\Exceptions;
 
 use Exception;
 
