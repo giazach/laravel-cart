@@ -4,6 +4,7 @@ namespace Berkayk\LaravelCart\Traits;
 
 use Berkayk\LaravelCart\Core\CartItem;
 use Berkayk\LaravelCart\Events\CartItemAdded;
+use Berkayk\LaravelCart\Events\CartItemQuantityChanged;
 use Berkayk\LaravelCart\Events\CartItemRemoved;
 use Berkayk\LaravelCart\Exceptions\ItemMissing;
 
@@ -21,6 +22,7 @@ trait CartItemsManager
         if ($this->itemExists($entity)) {
             $cartItemIndex = $this->items->search($this->cartItemsCheck($entity));
 
+            event(new CartItemQuantityChanged($entity));
             return $this->incrementQuantityAt($cartItemIndex, $quantity);
         }
 
