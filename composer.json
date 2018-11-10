@@ -23,7 +23,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Berkayk\\LaravelCart\\": "src/"
+            "Freshbitsweb\\LaravelCartManager\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -31,7 +31,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Berkayk\\LaravelCart\\Test\\": "tests"
+            "Freshbitsweb\\LaravelCartManager\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -40,7 +40,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Berkayk\\LaravelCart\\CartManagerServiceProvider"
+                "Freshbitsweb\\LaravelCartManager\\CartManagerServiceProvider"
             ]
         }
     },
